@@ -10,8 +10,8 @@ Plane.prototype.take_off = function() {
  this.isFlying = true;
 };
 
-var plane = new Plane;
-console.log(plane.take_off);
+// var plane = new Plane;
+// console.log(plane.take_off);
 
 // Plane.prototype.play = function(song) {
 //   this.currentlyPlayingSong = song;
