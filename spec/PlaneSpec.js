@@ -9,9 +9,15 @@ describe("Plane", function() {
     expect(plane.isFlying).toBe(true);
   });
 
-  it("should not be flying when landed", function(){
+  it("should not be flying when landed", function() {
     plane.land();
     expect(plane.isFlying).toBe(false);
+  });
+
+  it("should be flying when taken off", function() {
+    plane.land();
+    plane.take_off();
+    expect(plane.isFlying).toBe(true);
   });
 
   // it("should be able to play a Song", function() {

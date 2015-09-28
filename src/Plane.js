@@ -6,9 +6,12 @@ Plane.prototype.land = function() {
   this.isFlying = false;
 };
 
-var plane = new Plane
+Plane.prototype.take_off = function() {
+  this.isFlying = true;
+};
 
-console.log(plane.land());
+var plane = new Plane;
+console.log(plane.take_off);
 
 // Plane.prototype.play = function(song) {
 //   this.currentlyPlayingSong = song;
