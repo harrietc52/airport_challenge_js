@@ -1,4 +1,8 @@
 function Airport() {
   this.plane = []
-  var CAPACITY = 40
+  this.default_capacity = 20
 };
+
+// Airport.prototype.allow_land = function(plane) {
+//
+// }

@@ -3,10 +3,10 @@ describe("Airport", function() {
  var plane;
 
  beforeEach(function() {
-   plane = new Plane();
+   airport = new Airport();
  });
- 
- it("can hold planes", function() {
-   allow_land(plane)
-   expect
- })
+
+ it("should be empty when created", function() {
+   expect(airport.plane).toEqual([]);
+ });
+});
