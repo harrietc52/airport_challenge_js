@@ -9,3 +9,10 @@ function Airport() {
     }
     this.planes.push(plane);
   };
+
+  Airport.prototype.releasePlane = function(plane) {
+    if (this.planes.length == 0) {
+      throw new Error("Airport is empty");
+    }
+    this.planes.pop(plane);
+  }
