@@ -1,24 +1,24 @@
 describe("Plane", function() {
- var plane;
+  var plane;
 
- beforeEach(function() {
+  beforeEach(function() {
    plane = new Plane();
- });
+  });
 
- it("should be flying when created", function() {
+  it("should be flying when created", function() {
    expect(plane.isFlying).toBe(true);
- });
+  });
 
- it("should not be flying when landed", function() {
+  it("plane can landed", function() {
    plane.land();
    expect(plane.isFlying).toBe(false);
- });
+  });
 
- it("should be flying when taken off", function() {
-   plane.land();
-   plane.take_off();
+  it("should be flying when taken off", function() {
+   plane.takeOff();
    expect(plane.isFlying).toBe(true);
- });
+  });
+});
 
  // it("should be able to play a Song", function() {
  //   plane.play(song);
@@ -68,4 +68,3 @@ describe("Plane", function() {
  //     }).toThrowError("song is already playing");
  //   });
  // });
-});

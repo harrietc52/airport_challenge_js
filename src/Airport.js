@@ -1,8 +1,11 @@
 function Airport() {
-  this.plane = []
-  this.default_capacity = 20
-};
+  this.planes = [];
+  this.defaultCapacity = 20;
+}
 
-// Airport.prototype.allow_land = function(plane) {
-//
-// }
+  Airport.prototype.landPlane = function(plane) {
+    if (this.planes.length > 20) {
+      throw new Error("Airport is full");
+    }
+    this.planes.push(plane);
+  };

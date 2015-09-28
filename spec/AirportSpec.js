@@ -1,4 +1,5 @@
 describe("Airport", function() {
+
  var airport;
  var plane;
 
@@ -6,7 +7,9 @@ describe("Airport", function() {
    airport = new Airport();
  });
 
- it("should be empty when created", function() {
-   expect(airport.plane).toEqual([]);
+ it("airport can land plane", function() {
+   airport.landPlane(plane)
+   expect(airport.planes.length).toEqual(1);
  });
+
 });
