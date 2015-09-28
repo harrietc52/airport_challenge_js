@@ -1,20 +1,28 @@
 function Plane() {
-  this.isFlying = true;
-}
-Plane.prototype.land = function(airport) {
-  this.isFlying = false;
+ this.isFlying = true;
+};
+
+Plane.prototype.land = function() {
+ this.isFlying = false;
+};
+
+Plane.prototype.take_off = function() {
+ this.isFlying = true;
 };
 
 var plane = new Plane;
-console.log(plane.land("JFK"));
+console.log(plane.take_off);
 
-
-
-// plane.prototype.pause = function() {
+// Plane.prototype.play = function(song) {
+//   this.currentlyPlayingSong = song;
+//   this.isPlaying = true;
+// };
+//
+// Plane.prototype.pause = function() {
 //   this.isPlaying = false;
 // };
 //
-// plane.prototype.resume = function() {
+// Plane.prototype.resume = function() {
 //   if (this.isPlaying) {
 //     throw new Error("song is already playing");
 //   }
@@ -22,6 +30,6 @@ console.log(plane.land("JFK"));
 //   this.isPlaying = true;
 // };
 //
-// plane.prototype.makeFavorite = function() {
+// Plane.prototype.makeFavorite = function() {
 //   this.currentlyPlayingSong.persistFavoriteStatus(true);
 // };
