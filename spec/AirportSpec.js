@@ -24,11 +24,13 @@ describe("Airport", function() {
    airport.landPlane(plane);
    airport.landPlane(plane);
    airport.landPlane(plane);
-   expect(function() { airport.landPlane(plane); } ).toThrowError("Airport is full");
+   expect(function() { airport.landPlane(plane);
+  }).toThrowError("Airport is full");
  });
 
  it("airport can not release plane when empty", function() {
-   expect(function() { airport.releasePlane(plane); } ).toThrowError("Airport is empty");
+   expect(function() { airport.releasePlane(plane);
+  }).toThrowError("Airport is empty");
  });
 
 });
